@@ -35,7 +35,7 @@ jobs:
           registryPassword: ${{ secrets.ACALEBEBACKENDPROD_REGISTRY_PASSWORD }}
           containerAppName: aca-lebe-backend-prod
           resourceGroup: rg-lebe-prod-portal
-          imageToBuild: hub.docker.com/aca-lebe-backend-prod:${{ github.sha }}
+          imageToBuild: lebesolarenergie/lebe:${{ github.sha }}
           
             
 
