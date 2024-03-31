@@ -30,7 +30,7 @@ jobs:
         uses: azure/container-apps-deploy-action@v2
         with:
           appSourcePath: ${{ github.workspace }} 
-          registryUrl: hub.docker.com
+          registryUrl: docker.io
           registryUsername: ${{ secrets.ACALEBEBACKENDPROD_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.ACALEBEBACKENDPROD_REGISTRY_PASSWORD }}
           containerAppName: aca-lebe-backend-prod
